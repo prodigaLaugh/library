@@ -1,17 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div @click="show=true" style="cursor: pointer;">没事 点一下</div>
+  
+	
+	<alert :flag.sync="show">
+		<template #header>
+			<h2>this is header</h2>
+		</template>
+		<template #footer>
+			<h2>this is footer</h2>
+		</template>
+	</alert>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Alert from './components/Alert.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Alert
+  },
+  data(){
+	return{
+		show:false
+	}
   }
 }
 </script>
