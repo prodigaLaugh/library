@@ -1,8 +1,17 @@
 <meta charset="utf-8">
-<title>alert demo</title>
-<script src="./alert.umd.js"></script>
+<title>alert1 demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./alert1.umd.js"></script>
 
+
+<div id="app">
+  <demo></demo>
+</div>
 
 <script>
-console.log(alert)
+new Vue({
+  components: {
+    demo: alert1
+  }
+}).$mount('#app')
 </script>
