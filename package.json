@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-	"pkg": "vue-cli-service build --target lib --name alert1 --dest pkg ./src/components/Alert.vue"
+	"pkg": "vue-cli-service build --target lib --name aler --dest pkg ./src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

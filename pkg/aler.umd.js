@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["alert1"] = factory();
+		exports["aler"] = factory();
 	else
-		root["alert1"] = factory();
+		root["aler"] = factory();
 })((typeof self !== 'undefined' ? self : this), function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -770,15 +770,23 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Alert = (component.exports);
+// CONCATENATED MODULE: ./src/components/index.js
+
+
+Alert.install = function (Vue) {
+  return Vue.component("aler", Alert);
+};
+
+/* harmony default export */ var components = (Alert);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (Alert);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (components);
 
 
 
 /***/ })
 
-/******/ })["default"];
+/******/ });
 });
-//# sourceMappingURL=alert1.umd.js.map
+//# sourceMappingURL=aler.umd.js.map

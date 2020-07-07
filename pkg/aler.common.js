@@ -761,14 +761,22 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Alert = (component.exports);
+// CONCATENATED MODULE: ./src/components/index.js
+
+
+Alert.install = function (Vue) {
+  return Vue.component("aler", Alert);
+};
+
+/* harmony default export */ var components = (Alert);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (Alert);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (components);
 
 
 
 /***/ })
 
-/******/ })["default"];
-//# sourceMappingURL=alert1.common.js.map
+/******/ });
+//# sourceMappingURL=aler.common.js.map

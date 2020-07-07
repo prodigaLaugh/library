@@ -15,7 +15,9 @@
 </template>
 
 <script>
-import Alert from './components/Alert.vue'
+import Alert from './components/index'
+import Vue from 'vue'
+Vue.use(Alert)
 
 export default {
   name: 'App',
