@@ -3,27 +3,26 @@
     <div @click="show=true" style="cursor: pointer;">没事 点一下</div>
   
 	
-	<alert :flag.sync="show">
+	<aler :flag.sync="show">
 		<template #header>
 			<h2>this is header</h2>
 		</template>
 		<template #footer>
 			<h2>this is footer</h2>
 		</template>
-	</alert>
+	</aler>
   </div>
 </template>
 
 <script>
-import Alert from './components/index'
+import aler from './components/index'
 import Vue from 'vue'
-Vue.use(Alert)
+Vue.use(aler)
+console.log(aler)
 
 export default {
   name: 'App',
-  components: {
-    Alert
-  },
+  
   data(){
 	return{
 		show:false
